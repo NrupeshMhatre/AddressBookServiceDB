@@ -28,3 +28,5 @@ SELECT firstname from Addressbook where firstname = 'Suraj';
 
 DELETE from Addressbook WHERE id =4 ;
 SELECT * FROM Addressbook WHERE firstname = 'kumar';
+
+SELECT * from addressbook where city = 'Uran' OR state = 'MH';
