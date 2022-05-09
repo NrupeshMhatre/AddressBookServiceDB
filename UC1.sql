@@ -32,3 +32,6 @@ SELECT * FROM Addressbook WHERE firstname = 'kumar';
 SELECT * from addressbook where city = 'Uran' OR state = 'MH';
 
 SELECT  city, state, COUNT(*) from addressbook where city = 'Uran' AND state = 'Maharashtra';
+
+SELECT * FROM addressbook WHERE state = 'Maharashtra' ORDER BY firstname ASC;
+SELECT * FROM addressbook WHERE state = 'Maharashtra' ORDER BY firstname DESC;
