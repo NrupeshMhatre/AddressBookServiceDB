@@ -30,3 +30,5 @@ DELETE from Addressbook WHERE id =4 ;
 SELECT * FROM Addressbook WHERE firstname = 'kumar';
 
 SELECT * from addressbook where city = 'Uran' OR state = 'MH';
+
+SELECT  city, state, COUNT(*) from addressbook where city = 'Uran' AND state = 'Maharashtra';
