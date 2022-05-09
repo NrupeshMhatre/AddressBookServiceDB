@@ -36,13 +36,4 @@ SELECT  city, state, COUNT(*) from Addressbook where city = 'Uran' AND state = '
 SELECT * FROM Addressbook WHERE state = 'Maharashtra' ORDER BY firstname ASC;
 SELECT * FROM Addressbook WHERE state = 'Maharashtra' ORDER BY firstname DESC;
 
-ALTER  TABLE Addressbook add Ab_name varchar(20);
-alter table Addressbook add Ab_type char(20);
-
-update Addressbook set Ab_name = 'AddressBook1' where id = 2;
-update Addressbook set Ab_name = 'AddressBook2' where id = 1;
-update Addressbook set Ab_name = 'AddressBook3' where id IN (3,4);
-
-update Addressbook set Ab_name = 'family' where id = 1;
-update Addressbook set Ab_name = 'friends' where id = 2;
-update Addressbook set Ab_name = 'profession' where id IN(3,4);
+SELECT ab_type, COUNT(*) FROM addressbook GROUP BY ab_type;
