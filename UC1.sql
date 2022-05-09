@@ -20,3 +20,8 @@ INSERT INTO addressbook VALUES
 (4,'Kumar','k','Madhya Pradesh','Gwalior','MP','43342','6577567890', 'kumar.m@gmail.com');
 
 SELECT * FROM addressbook;
+UPDATE addressbook SET firstname = 'Suraj'
+WHERE id = 1; 
+
+SELECT * from addressbook where firstname = 'Suraj';
+SELECT firstname from addressbook where firstname = 'Suraj';
