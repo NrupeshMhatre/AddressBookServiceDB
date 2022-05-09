@@ -37,3 +37,5 @@ SELECT * FROM Addressbook WHERE state = 'Maharashtra' ORDER BY firstname ASC;
 SELECT * FROM Addressbook WHERE state = 'Maharashtra' ORDER BY firstname DESC;
 
 SELECT ab_type, COUNT(*) FROM addressbook GROUP BY ab_type;
+insert into addressbook(id,firstname,lastname,address,city,state,zip,phonenumber,email,ab_name,ab_type)
+ values(4,'Viraj', 'Thakur', 'satara', 'satara', 'Maharashtra','424112', '1234567890',	'vir@gmail.com',	'AddressBook2',	'friends');
