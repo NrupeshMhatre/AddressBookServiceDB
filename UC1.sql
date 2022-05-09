@@ -29,9 +29,20 @@ SELECT firstname from Addressbook where firstname = 'Suraj';
 DELETE from Addressbook WHERE id =4 ;
 SELECT * FROM Addressbook WHERE firstname = 'kumar';
 
-SELECT * from addressbook where city = 'Uran' OR state = 'MH';
+SELECT * from Addressbook where city = 'Uran' OR state = 'MH';
 
-SELECT  city, state, COUNT(*) from addressbook where city = 'Uran' AND state = 'Maharashtra';
+SELECT  city, state, COUNT(*) from Addressbook where city = 'Uran' AND state = 'Maharashtra';
 
-SELECT * FROM addressbook WHERE state = 'Maharashtra' ORDER BY firstname ASC;
-SELECT * FROM addressbook WHERE state = 'Maharashtra' ORDER BY firstname DESC;
+SELECT * FROM Addressbook WHERE state = 'Maharashtra' ORDER BY firstname ASC;
+SELECT * FROM Addressbook WHERE state = 'Maharashtra' ORDER BY firstname DESC;
+
+ALTER  TABLE Addressbook add Ab_name varchar(20);
+alter table Addressbook add Ab_type char(20);
+
+update Addressbook set Ab_name = 'AddressBook1' where id = 2;
+update Addressbook set Ab_name = 'AddressBook2' where id = 1;
+update Addressbook set Ab_name = 'AddressBook3' where id IN (3,4);
+
+update Addressbook set Ab_name = 'family' where id = 1;
+update Addressbook set Ab_name = 'friends' where id = 2;
+update Addressbook set Ab_name = 'profession' where id IN(3,4);
